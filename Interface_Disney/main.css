@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Establecer el color de fondo de la sección en #040714. */
+section{
+    background-color: #040714;
+}
+
+/* Aqui es todo el encabezado de la pagina */
+header{
+    background-color: #040714;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #0063e5; */
+    position: fixed;
+    z-index: 1;
+}
+
+header img{
+    width: 80px;
+    margin-left: 55px;
+}
+.btn{
+    height: 50px;
+    width: 180px;
+    font-size: 1.2rem;
+    background-color: rgba(0,0,0,.8);
+    color: #ffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    
+}
+.suscrip{
+    background: #0063e5;
+    width: 215px;
+}
+.iniciar{
+    border: 1px solid #ffff;
+    right: 0;
+    margin: 0 41px 0 10px; 
+}
+.iniciar:hover{
+    background-color: #ffff;
+    color: #000;
+}
+.suscrip:hover{
+    background: #126ce2;
+}
+
+
+/* Parte de inicio */
+.Inicio{
+    background: url(./img/Desk.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 567px;
+    position: relative;
+    }
+
+.Inicio{
+    display: flex;
+    flex-direction: column;
+}
+.Inicio .title{
+    position: relative;
+    max-width: 640px;
+    left: 86px;
+    top: 130px;
+}
+.Inicio .title h1{
+    color: #ffff;
+    font-weight: 600;
+    font-size:1.8rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+.title button{
+    width: 100%;
+    padding: 23px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #6421ff;
+    border: none;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+.title button:hover,.Planes button:hover{
+    background: #692ef3;
+}
+.title div{
+    text-align: center;
+}
+.title div img{
+    width: 320px;
+    margin: 27px 0;
+}
+.fa-solid {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 100;
+    color: #ffff;
+    cursor:pointer;
+}
+
+
+/* -----------Vistas------------------------------------------------- */
+/* Esta es la seccion de vistas  */
+.Vistas{
+    margin-bottom: 250px;
+}
+.Vistas ul li{
+    display: inline-block;
+    margin: 60px 12px;
+}
+.Vistas ul{
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 0%;
+    position: relative;
+    cursor: pointer;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:calc(100% + 4px);
+    width: 100%;
+    height:5px;
+    background-color: #ffff;
+    opacity: 0;
+}
+ul li a.select::after{
+    opacity: 1;
+}
+
+.Vistas ._imgenes{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 25px;
+    padding: 10px;
+}
+._imgenes img{
+    width: 100%;
+    border-radius: 5px;
+}
+.Ocultar{
+    display: none;
+}
+
+/* --------------PLANES---------------------------------- */
+.Elige{
+    margin-top: 250px;
+    width: 90%;
+    margin: auto;
+}
+.Elige{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 150px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+}
+.title h1{
+    color: #ffff;
+    font-size: 45px;
+    font-weight: 500;
+}
+.plan h3, .plan p{
+    color: white;
+}
+.plan h3{
+    font-size: 28px;
+    padding-top: 30px;
+}
+.plan p{
+    font-size: 18px;
+    line-height: 28px;
+    color: silver;
+    width: 75%;
+    margin: auto;
+}
+
+.Combo div{
+    background-image: url(./img/Planes/Plan_com_back.png);
+    background-repeat: no-repeat ;
+    background-size: contain;
+}
+.plan{
+    text-align: center;
+    padding: 0 40px;
+    height: 500px;
+    margin-top: 35px;
+}
+
+.plan img {
+    width: 300px;
+    padding-top: 60px;
+}
+
+.plan button{
+    cursor: pointer;
+    border-radius: 5px;
+    background: #6421ff;
+    border: none;
+    font-size: 1.2rem;
+    color: #ffff;
+    margin-top: 25px; 
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0 58px;
+}
+
+
+/* ----------------PANTALLA----------------------------------------------- */
+.Pantalla {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    
+}
+.Pantalla img{
+    width: 680px;
+    margin-left: 10px;
+}
+.Pantalla .conte{
+    place-self: center;
+    color: silver;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 70px 0 34px;
+}
+.conte h2{
+    color: #ffff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------- */
+.Descarga{
+    width: 90%;
+    margin: auto;
+}
+.Descarga .conte-des{
+    margin: 10px;
+    background: url(./img/Des.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    max-height: 800px;
+}
+.Descarga .conte-des div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+    width: 650px;
+    height: 758px;
+}
+.Descarga div p{
+    font-size: 17.5px;
+    line-height: 28px;
+    color: silver;
+    font-weight: 400;
+    letter-spacing: .2px;
+}
+.Descarga div h2{
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: normal;
+    margin: 0 0 20px 0;
+}
+
+/* ---------------- */
+.Dispositovos{
+    margin: 220px 0;
+    height: 100vh;
+
+}
+.Dispositovos .conte-Dis{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #ffff;
+    text-align: center;
+}
+.Dispositovos img{
+    place-self: center;
+    width: 90%;
+}
+.Dispositovos h1{
+    text-align: center;
+    color:#ffff;
+    margin-bottom: 20px;
+    font-size: 41px;
+    font-weight: 500;
+}
+.conte-Dis h2{
+    font-size: 28px;
+    margin: 20px 0 25px 0;
+}
+.conte-Dis li{
+    list-style: none;
+    color:silver;
+    margin: 8px 0;
+    font-size: 18px;
+}
+/* -------------------------------------------- */
+
+.Preguntas {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+
+}
+.Preguntas h1{
+    text-align: center;
+    color: #ffff;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.Preguntas div{
+    background-color: #13151d;
+    padding: 25px 20px;
+    margin: 15px 10px;
+    cursor: pointer;
+    position:unset;
+
+}
+/* .Preguntas div i{
+    float: right;
+} */
+.Preguntas div p{
+    font-size: 20px;
+    color: silver;
+    /* background-color: #0063e5; */
+    position: relative;
+}
+.Preguntas div p::after{
+    content: '';
+    position: absolute;
+    left: calc(100% - 44px);
+    top:-3px;
+    width: 3px;
+    height: 25px;
+    background-color: #ffff;
+}
+.Preguntas div p::before{
+    content: '';
+    position: absolute;
+    left: calc(100% - 55px);
+    top: 8px;
+    width: 25px;
+    height: 3px;
+    background-color: #ffff;
+}
+
+
+footer{
+    background-color: #040714;
+    text-align: center;
+    padding: 25px 5px;
+}
+footer img{
+    width: 80px;
+    
+}
+footer div{
+    margin: 21px 0;
+    
+}
+footer p, footer a{
+    font-size: 12px;
+    line-height: 22px;
+    color: silver;
+    letter-spacing: .4px;
+}
+footer a{
+    text-decoration: none;
+    margin: 0 13px;
+}
