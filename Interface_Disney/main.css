@@ -13,19 +13,24 @@ section{
 
 /* Aqui es todo el encabezado de la pagina */
 header{
-    background-color: #040714;
-    padding: 10px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* background-color: #0063e5; */
     position: fixed;
     z-index: 1;
+    transition: all 0.4s ease-out;
 }
-
+.add{
+    background-color: #040714;
+}
+header.add img,
+header.add .suscrip{
+    opacity: 1;
+}
 header img{
     width: 80px;
     margin-left: 55px;
+    opacity: 0;
 }
 .btn{
     height: 50px;
@@ -36,11 +41,14 @@ header img{
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    
+}
+header>div{
+    margin: 10px 0;
 }
 .suscrip{
     background: #0063e5;
     width: 215px;
+    opacity: 0;
 }
 .iniciar{
     border: 1px solid #ffff;

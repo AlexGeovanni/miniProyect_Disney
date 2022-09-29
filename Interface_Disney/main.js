@@ -2,6 +2,11 @@ const muyPronto = document.getElementById('Pronto');
 const Tendencia = document.getElementById('Tendencia');
 const masStar = document.getElementById('MasStar');
 
+window.addEventListener('scroll',function(){
+    const header = document.getElementById('Header');
+    header.classList.toggle('add',window.scrollY>450);
+})
+
 function pronto(){
     document.getElementById('muyPronto').classList.remove('Ocultar');
     document.getElementById('masStar').classList.add('Ocultar');
