@@ -4,7 +4,7 @@ const masStar = document.getElementById('MasStar');
 
 window.addEventListener('scroll',function(){
     const header = document.getElementById('Header');
-    header.classList.toggle('add',window.scrollY>450);
+    header.classList.toggle('add',window.scrollY>470);
 })
 
 function pronto(){
