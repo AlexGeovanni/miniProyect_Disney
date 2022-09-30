@@ -24,7 +24,7 @@ header{
     background-color: #040714;
 }
 header.add img,
-header.add .suscrip{
+header.add .suscripcion{
     opacity: 1;
 }
 header img{
@@ -45,7 +45,7 @@ header img{
 header>div{
     margin: 10px 0;
 }
-.suscrip{
+.suscripcion{
     background: #0063e5;
     width: 215px;
     opacity: 0;
@@ -54,46 +54,78 @@ header>div{
     border: 1px solid #ffff;
     right: 0;
     margin: 0 41px 0 10px; 
+    transition: all 0.1s ease-in;
 }
 .iniciar:hover{
     background-color: #ffff;
     color: #000;
 }
-.suscrip:hover{
+.suscripcion:hover{
     background: #126ce2;
 }
 
 
 /* Parte de inicio */
-.Inicio{
+#Inicio{
     background: url(./img/Desk.JPG);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 567px;
-    position: relative;
+    height: 100vh;
     }
 
-.Inicio{
+#Inicio{
     display: flex;
     flex-direction: column;
+    
 }
-.Inicio .title{
+#Inicio .Conte{
     position: relative;
     max-width: 640px;
     left: 86px;
-    top: 130px;
+    top: 88px;
+    text-align: center;
 }
-.Inicio .title h1{
+#Inicio .Conte h1{
     color: #ffff;
     font-weight: 600;
     font-size:1.8rem;
-    text-align: center;
     font-weight: 500;
     line-height: 30px;
 }
-.title button{
+
+.Conte>img{
+    width: 320px;
+    margin:40px 0 27px 0;
+}
+.Conte .Opcion{
+    display: flex;
+    justify-content: space-between;
+    gap: 19px;
+    margin-bottom: 10px;
+}
+.Opcion>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    padding: 23px 0;
+}
+
+.Opcion picture{
+    width: 240px;
+    display: block;
+    margin: auto;
+}
+.Opcion .Combo{
+    max-width: 130px;
+}
+.Opcion picture img{
+    width: 100%;
+    margin: 40px 0 30px 0;
+}
+.Opcion div button{
+    width: 100%;
+    height: 60px;
+    padding: 11.5px 24px;
     cursor: pointer;
     border-radius: 5px;
     background: #6421ff;
@@ -101,33 +133,33 @@ header>div{
     font-size: 1.2rem;
     color: #ffff;
 }
-.title button:hover,.Planes button:hover{
+.Opcion button:hover,.Planes button:hover{
     background: #692ef3;
 }
-.title div{
-    text-align: center;
-}
-.title div img{
-    width: 320px;
-    margin: 27px 0;
-}
-.fa-solid {
-    margin-top: 30px;
-    font-size: 25px;
-    font-weight: 100;
+.Tipo_suspcrip>a{
+    margin: 12px 0;
     color: #ffff;
     cursor:pointer;
+    font-size: 16px;
+    line-height: 28px;
 }
+.Conte .Tipo_suspcrip{
+    margin: 31px 0;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* -----------Vistas------------------------------------------------- */
 /* Esta es la seccion de vistas  */
 .Vistas{
+    margin-top: 80px;
     margin-bottom: 250px;
 }
 .Vistas ul li{
     display: inline-block;
-    margin: 60px 12px;
+    margin: 50px 12px;
 }
 .Vistas ul{
     text-align: center;
@@ -182,11 +214,11 @@ ul li a.select::after{
     grid-template-columns: repeat(3,1fr);
     margin-bottom: 150px;
 }
-.title{
+#Plan>.title{
     width: 100%;
     text-align: center;
 }
-.title h1{
+#Plan .title h1{
     color: #ffff;
     font-size: 45px;
     font-weight: 500;
@@ -262,7 +294,7 @@ ul li a.select::after{
     margin-bottom: 30px;
 }
 
-/* -------------------------------------- */
+/* --------------DESCARGAS---------------------------------- */
 .Descarga{
     width: 90%;
     margin: auto;
@@ -299,7 +331,7 @@ ul li a.select::after{
     margin: 0 0 20px 0;
 }
 
-/* ---------------- */
+/* --------------DISPOSITIVOS---------------------------------- */
 .Dispositovos{
     margin: 220px 0;
     height: 100vh;
@@ -334,8 +366,7 @@ ul li a.select::after{
     margin: 8px 0;
     font-size: 18px;
 }
-/* -------------------------------------------- */
-
+/* --------------PREGUNTAS---------------------------------- */
 .Preguntas {
     width: 90%;
     margin: auto;
@@ -356,9 +387,7 @@ ul li a.select::after{
     position:unset;
 
 }
-/* .Preguntas div i{
-    float: right;
-} */
+
 .Preguntas div p{
     font-size: 20px;
     color: silver;
@@ -368,23 +397,23 @@ ul li a.select::after{
 .Preguntas div p::after{
     content: '';
     position: absolute;
-    left: calc(100% - 44px);
-    top:-3px;
-    width: 3px;
-    height: 25px;
+    left: calc(100% - 18px);
+    top:-2px;
+    width: 2.5px;
+    height: 22px;
     background-color: #ffff;
 }
 .Preguntas div p::before{
     content: '';
     position: absolute;
-    left: calc(100% - 55px);
+    left: calc(100% - 28px);
     top: 8px;
-    width: 25px;
-    height: 3px;
+    width: 22px;
+    height: 2.5px;
     background-color: #ffff;
 }
 
-
+/* --------------FOOTER---------------------------------- */
 footer{
     background-color: #040714;
     text-align: center;
